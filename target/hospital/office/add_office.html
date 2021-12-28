@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>添加</title>
+    <style type="text/css">
+        tbody {
+            font-size: 25px;
+            color: #3e8e41;
+            background: EBD3E8;
+            height: 50px;
+            width: 500px;
+        }
+
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body topmargin="7%">
+    <center>
+        <form action="/add_office" method="post">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>编号:</td>
+                        <td><input type="text" placehoder="请输入编号" name="id">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>科室名:</td>
+                        <td><input type="text" placehoder="请输入科室名" name="name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>介绍:</td>
+                        <td><input type="text" placehoder="请输入介绍" name="introduce">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button class="button" type="submit">确定</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+        <br />
+        <a href="admin.html">跳转到管理员页</a>
+    </center>
+</body>
+
+</html>

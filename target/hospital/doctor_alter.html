@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<head>
+    <style>
+        tbody {
+            font-size: 25px;
+            color: #3e8e41;
+            background: EBD3E8;
+            height: 50px;
+            width: 500px;
+        }
+
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        a {
+            padding: 0px;
+            text-decoration: none;
+            background-color: #4CAF50;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        a:hover {
+            background-color: #3e8e41;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>注册</title>
+
+</head>
+
+<body topmargin="7%">
+<center>
+    <h3 style="color: #3e8e41;">信息填写</h3>
+    <form action="/doctor_alter" name="form2" method="post">
+        <table style="margin:auto">
+            <tr>
+                <td>性别：</td>
+                <td><input type="text" name="sex"></input></td>
+            </tr>
+            <tr>
+                <td>电话号码：</td>
+                <td><input type="text" name="phone"></input></td>
+            </tr>
+            <tr>
+                <td>科室：</td>
+                <td><input type="text" name="office"></input></td>
+            </tr>
+            <tr>
+                <td colspan="3" align="center">
+                    <button class="button" name="" onclick="dosubmit()">确定</button>
+                    <a href="doctor.html">返回</a>
+                </td>
+            </tr>
+        </table>
+    </form>
+</center>
+</body>

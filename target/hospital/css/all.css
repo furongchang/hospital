@@ -1,0 +1,34 @@
+a {
+    padding: 0px;
+    text-decoration: none;
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+a:hover {
+    background-color: #3e8e41;
+}
+tbody {
+    font-size: 25px;
+    color: #3e8e41;
+    background: EBD3E8;
+    height: 50px;
+    width: 500px;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}

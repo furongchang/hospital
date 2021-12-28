@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<head>
+    <style>
+        tbody {
+            font-size: 25px;
+            color: #3e8e41;
+            background: EBD3E8;
+            height: 50px;
+            width: 500px;
+        }
+
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        a {
+            padding: 0px;
+            text-decoration: none;
+            background-color: #4CAF50;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        a:hover {
+            background-color: #3e8e41;
+        }
+    </style>
+    <title>注册新用户</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/all.css">
+    <!--
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    -->
+    <script type="text/javascript">
+        function dosubmit() {
+            var th = document.form1;
+            if (th.username.value === "") {
+                alert("用户名不能为空！");
+                th.username.focus();
+                return;
+            }
+            if (th.password.value === "") {
+                alert("密码不能为空！");
+                th.password.focus();
+                return;
+            }
+            th.action = "/register";
+            th.submit();
+
+        }
+        function back() {
+            alert("退回主页！");
+            var th = document.form1;
+            th.acton = "<%=path%>/index.jsp";
+            th.submit;
+        }
+
+    </script>
+
+</head>
+
+
+<body topmargin="7%">
+    <center>
+        <h3 style="color: #3e8e41;">用户注册</h3>
+        <form action="/doctor_register" name="form2" method="post">
+            <table style="margin:auto">
+                <tr>
+                    <td>姓名：</td>
+                    <td><input type="text" name="name"></input></td>
+                </tr>
+                <tr>
+                    <td>性别：</td>
+                    <td><input type="text" name="sex"></input></td>
+                </tr>
+                <tr>
+                    <td>电话号码：</td>
+                    <td><input type="text" name="phone"></input></td>
+                </tr>
+                <tr>
+                    <td>科室：</td>
+                    <td><input type="text" name="office"></input></td>
+                </tr>
+                <tr>
+                    <td>用户名：</td>
+                    <td><input type="text" name="username"></input></td>
+                </tr>
+                <tr>
+                    <td>密 码：</td>
+                    <td><input type="password" name="password"></input></td>
+                </tr>
+                <tr>
+                    <td colspan="3" align="center">
+                        <button class="button" name="" onclick="dosubmit()">确定</button>
+                        <a href="index.jsp">返回</a>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </center>
+</body>
